@@ -264,7 +264,7 @@
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="http://[::1]/portofolio/#home">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -300,7 +300,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                        <button type="button" class="btn btn-primary">Add Data</button>
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                            <button type="button" class="btn btn-primary">Add data</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
