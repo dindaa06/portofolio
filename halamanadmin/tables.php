@@ -301,7 +301,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
-                            <button type="button" class="btn btn-primary">Add data</button>
+                            <button type="button" id="modalShowBut" class="btn btn-primary">Add data</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -327,7 +327,7 @@
                                                 <td>2010/03/17</td>
                                                 <td>$385,750</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -339,7 +339,7 @@
                                                 <td>2011/08/14</td>
                                                 <td>$163,000</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -351,7 +351,7 @@
                                                 <td>2011/06/02</td>
                                                 <td>$95,400</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -363,7 +363,7 @@
                                                 <td>2008/10/26</td>
                                                 <td>$235,500</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -375,7 +375,7 @@
                                                 <td>2011/03/09</td>
                                                 <td>$324,050</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -387,7 +387,7 @@
                                                 <td>2009/08/19</td>
                                                 <td>$139,575</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -399,7 +399,7 @@
                                                 <td>2011/01/25</td>
                                                 <td>$112,000</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -414,14 +414,37 @@
                                 <script src="vendor/jquery/jquery.min.js"></script>
                                 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                                <!-- Core plugin JavaScript-->
                                 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
                                 <script>
-                                    $('#modal').modal('show')
+                                    $(document).ready(function() {
+                                        $('#modalShowBut').click(function() {
+                                            $('#myModal').modal('show');
+                                        });
+                                    });
                                 </script>
 
-                                <!-- Custom scripts for all pages-->
                                 <script src="js/sb-admin-2.min.js"></script>
+                                <script src="script.js"></script>
+
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Ini Judulnya yaa Dinda</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Nanti di sini taro untuk input data Dinda
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
 </body>
 
