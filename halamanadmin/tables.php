@@ -327,7 +327,7 @@
                                                 <td>2010/03/17</td>
                                                 <td>$385,750</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -339,7 +339,7 @@
                                                 <td>2011/08/14</td>
                                                 <td>$163,000</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -351,7 +351,7 @@
                                                 <td>2011/06/02</td>
                                                 <td>$95,400</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -363,7 +363,7 @@
                                                 <td>2008/10/26</td>
                                                 <td>$235,500</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -375,7 +375,7 @@
                                                 <td>2011/03/09</td>
                                                 <td>$324,050</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -387,7 +387,7 @@
                                                 <td>2009/08/19</td>
                                                 <td>$139,575</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -399,7 +399,7 @@
                                                 <td>2011/01/25</td>
                                                 <td>$112,000</td>
                                                 <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
                                                     <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
                                                 </td>
                                             </tr>
@@ -422,6 +422,7 @@
 
                                 <!-- Custom scripts for all pages-->
                                 <script src="js/sb-admin-2.min.js"></script>
+                                <script src="script.js"></script>
 
 </body>
 
