@@ -332,54 +332,6 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Shou Itou</td>
-                                                <td>Regional Marketing</td>
-                                                <td>Tokyo</td>
-                                                <td>20</td>
-                                                <td>2011/08/14</td>
-                                                <td>$163,000</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Michelle House</td>
-                                                <td>Integration Specialist</td>
-                                                <td>Sidney</td>
-                                                <td>37</td>
-                                                <td>2011/06/02</td>
-                                                <td>$95,400</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Gavin Cortez</td>
-                                                <td>Team Leader</td>
-                                                <td>San Francisco</td>
-                                                <td>22</td>
-                                                <td>2008/10/26</td>
-                                                <td>$235,500</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Martena Mccray</td>
-                                                <td>Post-Sales support</td>
-                                                <td>Edinburgh</td>
-                                                <td>46</td>
-                                                <td>2011/03/09</td>
-                                                <td>$324,050</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <td>Sakura Yamamoto</td>
                                                 <td>Support Engineer</td>
                                                 <td>Tokyo</td>
