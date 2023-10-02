@@ -314,116 +314,163 @@
                                                     <th>Position</th>
                                                     <th>Office</th>
                                                     <th>Age</th>
-                                                    <th>Start date</th>
                                                     <th>Salary</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
-                                            <tr>
-                                                <td>Tatyana Fitzpatrick</td>
-                                                <td>Regional Director</td>
-                                                <td>London</td>
-                                                <td>19</td>
-                                                <td>2010/03/17</td>
-                                                <td>$385,750</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sakura Yamamoto</td>
-                                                <td>Support Engineer</td>
-                                                <td>Tokyo</td>
-                                                <td>37</td>
-                                                <td>2009/08/19</td>
-                                                <td>$139,575</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Donna Snider</td>
-                                                <td>Customer Support</td>
-                                                <td>New York</td>
-                                                <td>27</td>
-                                                <td>2011/01/25</td>
-                                                <td>$112,000</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
-                                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
-                                                </td>
-                                            </tr>
+                                            <tbody id="list">
+                                                <tr>
+                                                    <td>Tatyana Fitzpatrick</td>
+                                                    <td>Regional Director</td>
+                                                    <td>London</td>
+                                                    <td>19</td>
+                                                    <td>$385,750</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
+                                                        <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sakura Yamamoto</td>
+                                                    <td>Support Engineer</td>
+                                                    <td>Tokyo</td>
+                                                    <td>37</td>
+                                                    <td>$139,575</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
+                                                        <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Donna Snider</td>
+                                                    <td>Customer Support</td>
+                                                    <td>New York</td>
+                                                    <td>27</td>
+                                                    <td>$112,000</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
+                                                        <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-                                <!-- Bootstrap core JavaScript-->
-                                <script src="vendor/jquery/jquery.min.js"></script>
-                                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-                                <script>
-                                    $(document).ready(function() {
-                                        $('#modalShowBut').click(function() {
-                                            $('#myModal').modal('show');
-                                        });
-                                    });
-                                </script>
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#modalShowBut').click(function() {
+                        $('#myModal').modal('show');
+                    });
+                });
+            </script>
 
-                                <script src="js/sb-admin-2.min.js"></script>
+            <script src="js/sb-admin-2.min.js"></script>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title" id="myModalLabel">Add Data</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                            <form action="" id="student-form" class="col-10 mb-4" autocomplete="off">
-                                                <div class="mb-3">
-                                                    <label for="Name" class="form-label">Name</label>
-                                                    <input class="form-control" id="Name" type="text"/>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="Position" class="form-label">Position</label>
-                                                    <input class="form-control" id="Position" type="text"/>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="Office" class="form-label">Office</label>
-                                                    <input class="form-control" id="Office" type="text"/>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="Age" class="form-label">Age</label>
-                                                    <input class="form-control" id="Age" type="text"/>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="Startdate" class="form-label">Start date</label>
-                                                    <input class="form-control" id="Startdate" type="date"/>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="Salary" class="form-label">Salary</label>
-                                                    <input class="form-control" id="Salary" type="text"/>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <button class="btn btn-success add-btn" type="submit" onclick="showSubmitAlert()">Submit</button>
-                                                </div>
-                                            </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Add Data</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" id="student-form" class="col-10 mb-4" autocomplete="off">
+                                <div class="mb-3">
+                                    <label for="Name" class="form-label">Name</label>
+                                    <input class="form-control" id="name" type="text" />
                                 </div>
+                                <div class="mb-3">
+                                    <label for="Position" class="form-label">Position</label>
+                                    <input class="form-control" id="position" type="text" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Office" class="form-label">Office</label>
+                                    <input class="form-control" id="office" type="text" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Age" class="form-label">Age</label>
+                                    <input class="form-control" id="age" type="text" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Salary" class="form-label">Salary</label>
+                                    <input class="form-control" id="salary" type="text" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" onclick="inputData()">Add Data</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // let inputList = [];
+
+        function inputData() {
+            // Get the values of the three input fields.
+            var name = document.getElementById("name").value;
+            var position = document.getElementById("position").value;
+            var office = document.getElementById("office").value;
+            var age = document.getElementById("age").value;
+            var salary = document.getElementById("salary").value;
+
+            // Create an object to represent the inputs and push it into the array.
+            var data = {
+                name: name,
+                position: position,
+                office: office,
+                age: age,
+                salary: salary
+            };
+
+            // inputList.push(data);
+
+            // Clear the input fields.
+            document.getElementById("name").value = "";
+            document.getElementById("position").value = "";
+            document.getElementById("office").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("salary").value = "";
+
+
+            mahasiswaList = document.getElementById("list");
+            // mahasiswaList.innerHTML = "";
+
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                                <td>${data.name}</td>
+                                <td>${data.position}</td>
+                                <td>${data.office}</td>
+                                <td>${data.age}</td>
+                                <td>${data.salary}</td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm edit" onclick="showEditAlert()">Edit</a>
+                                    <a href="#" class="btn btn-danger btn-sm edit" onclick="confirmDelete()">Delete</a>
+                                </td>
+                            `;
+            mahasiswaList.appendChild(row);
+        }
+    </script>
 
 
 </body>
