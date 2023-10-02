@@ -430,13 +430,41 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title" id="myModalLabel">Ini Judul</h4>
+                                                <h4 class="modal-title" id="myModalLabel">Add Data</h4>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                Disini taro inputan datanya nanti yaa
+                                            <form action="" id="student-form" class="col-10 mb-4" autocomplete="off">
+                                                <div class="mb-3">
+                                                    <label for="Name" class="form-label">Name</label>
+                                                    <input class="form-control" id="Name" type="text"/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Position" class="form-label">Position</label>
+                                                    <input class="form-control" id="Position" type="text"/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Office" class="form-label">Office</label>
+                                                    <input class="form-control" id="Office" type="text"/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Age" class="form-label">Age</label>
+                                                    <input class="form-control" id="Age" type="text"/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Startdate" class="form-label">Start date</label>
+                                                    <input class="form-control" id="Startdate" type="date"/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="Salary" class="form-label">Salary</label>
+                                                    <input class="form-control" id="Salary" type="text"/>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <button class="btn btn-success add-btn" type="submit" onclick="showSubmitAlert()">Submit</button>
+                                                </div>
+                                            </form>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
